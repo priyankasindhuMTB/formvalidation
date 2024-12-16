@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #card{
+                background-color:lightseagreen;
+                width:50%;
+                display: flex;
+               justify-self: center;
+               border-radius: 50px;
+              
+            }
+            .item{
+                border:none;
+            }
+            #key{
+               font-size:40px;
+               color:crimson;
+            }
+            .input{
+                    border-radius:60px;
+                    border-color: chocolate;
+                    
+            }
+            .input::placeholder{
+                color:red;
+            }
+             button{
+                    font-size: 25px;
+                    display: flex;
+                    justify-self: center;
+                   
+            }
+    </style>
+</head>
+
+<body>
+    <form id="card">
+        <fieldset class="item" >
+            <legend id="key">personal information</legend>
+            <label  for="firstname">First Name:</label>
+            <input id="Name" class="input" type="text" placeholder="Enter you Name" name="fname"/></br></br>
+            <!-- <div id="key"></div><br /> -->
+            <label>Last Name:</label>
+            <input id="inpt" class="input" type="text" placeholder="Enter you  Last Name" /><br /><br />
+            <label>password:</label>
+            <input type="password"  class="input" id="pwd" placeholder="password" autocomplete="off" /><br /><br />
+            <label>Confirm Password:</label>
+            <input type="password"  class="input" id="cpwd" placeholder=" confm-password" autocomplete="off" /><br /><br />
+            <label>Mobile No:</label>
+            <input type="text"  class="input" placeholder="number" maxlength="10" minlength="10"  id="number" /><br /><br />
+            <button type="submit"   class="input" id="btn">submit</button>
+        </fieldset>
+
+    </form>
+    <script>
+        document.getElementById("btn").addEventListener('click', function (e) {
+            // alert("hello")
+            e.preventDefault()
+
+            let a = Name.value;
+            let b = inpt.value;
+            let c = pwd.value;
+            let d = cpwd.value;
+            let h = number.value;
+            let pattern = /^[A-Za-z\s]+$/
+            let patternnum= /^[0-9]+$/
+            if (a == "") {
+                alert("fill")
+             e.preventDefault()
+            }else if(!pattern.test(a)){
+          alert("enter only alphabte")
+            //     // e.preventDefault()
+            // }else if(b==""){
+            //     alert("fill some")
+            //     // e.preventDefault()
+            // }else if(!pattern.test(b)){
+            //     alert("only alfbates")
+            //     // e.preventDefault()
+            // }else if(c==""){
+            //     alert("please fill")
+            //     // e.preventDefault()
+            //  } else if(!patternnum.test(c)){
+            //     alert("only number")  
+            //     // e.preventDefault()
+            // }else if(d==""){
+            //     alert("plz fill the number")
+            //     // e.preventDefault()
+            // }else if(!patternnum.test(d)){
+            //     alert("only num ")
+            //     // e.preventDefault()
+            // }else if(c!=d){
+            //         alert("not equal to password")
+            //     //    e. preventDefault()
+            // }else if(h==""){
+            //     alert("please fill the contact")
+            //         // e.preventDefault()
+                
+         }else{
+               btn.textcontent
+              alert("form submit")
+                e.target.submit();
+             }
+
+            
+             
+
+        })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
